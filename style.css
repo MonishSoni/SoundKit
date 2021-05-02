@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --font1: 'Josefin Sans', sans-serif;
+    --font2: 'Luckiest Guy', cursive;
+    --font3: 'Monoton', cursive;
+}
+
+.keys {
+  padding:6%;
+  height: 100vh;
+  background-color:#F4F4F4;
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  padding: 6%;
+  border: 1px solid transparent;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  transition: all 0.07s;
+}
+
+.playing {
+    transform: scale(1.03);
+    border-radius: 5px;
+    box-shadow: 0 0 8px -5px rgba(255, 255, 255, 0.5);
+}
+.key kbd {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 48px;
+  color:#ffffff;
+  font-family: var(--font3);
+}
+
+.key span{
+    font-family: var(--font1);
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 15px;
+    letter-spacing: 3px;
+}
